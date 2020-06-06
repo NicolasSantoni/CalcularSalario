@@ -95,6 +95,7 @@
             }
           }
           $liquido=$brutoF-$retiraIRRF;
+          $liquido=$liquido+$dep;
           $string="$nome|$bruto|$retiraINSS|$brutoF|$retiraIRRF|$dep|$liquido\n";
           //ARQUIVO
           $arquivo = fopen('arquivo.txt','a+');
